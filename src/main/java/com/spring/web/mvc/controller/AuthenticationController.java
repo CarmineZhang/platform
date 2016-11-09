@@ -8,12 +8,12 @@ import com.sun.net.httpserver.Authenticator.Success;
 @Controller
 public class AuthenticationController {
 
-	@RequestMapping
-	public String Success(){
-		System.out.println("success");
-		return "success";
-	}
-	
+//	@RequestMapping
+//	public String Success(){
+//		System.out.println("success");
+//		return "success";
+//	}
+//	
 	@RequestMapping("/login")
 	public String login(){
 		System.out.println("LOGIN");
@@ -24,5 +24,12 @@ public class AuthenticationController {
 	public String loginSuccess(){
 		System.out.println("loginSuccess");
 		return "success";
+	}
+	
+	@RequestMapping("/logoutSuccess")
+	public String logoutSuccess(){
+		System.out.println("logout success");
+		
+		return "logout";
 	}
 }

@@ -6,6 +6,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 /**
  * 注册DispatcherServlet
+ * 与xml配置有相同的效果
  * @author zhangmin
  *
  */

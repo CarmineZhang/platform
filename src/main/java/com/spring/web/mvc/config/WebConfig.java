@@ -9,6 +9,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+/**
+ * 如果不使用@EnableWebMvc此注解,需要让类实现WebMvcConfigurationSupport 类
+ * @author zhangmin
+ *
+ */
 @Configuration
 @EnableWebMvc
 @ComponentScan("com.spring.web.mvc.controller")
@@ -23,4 +28,5 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		viewResolver.setSuffix(".jsp");  
 		return viewResolver;  
 	}
+	
 }
