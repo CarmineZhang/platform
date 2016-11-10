@@ -13,7 +13,7 @@ public class AuthenticationController {
 //		System.out.println("success");
 //		return "success";
 //	}
-//	
+	
 	@RequestMapping("/login")
 	public String login(){
 		System.out.println("LOGIN");
